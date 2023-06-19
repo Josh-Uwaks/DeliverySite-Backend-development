@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const User = require('../schema/user')
 const {AllUserData, userRegisteration, userLogin, userLogout, userProfile, userUpdateProfile} = require('../controllers/userControllers')
 
 router.get('/', AllUserData)
