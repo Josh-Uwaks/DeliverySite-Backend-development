@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json());
-app.use(cors({origin: ['http://localhost:3000'], credentials: true}))
+app.use(cors({origin: ['http://localhost:3000', 'https://deliverysitetest.netlify.app'], credentials: true}))
 app.use(express.urlencoded({extended: true}));
 app.use(CookieParser())
 app.use("/api/v1/users", UserRoute);
